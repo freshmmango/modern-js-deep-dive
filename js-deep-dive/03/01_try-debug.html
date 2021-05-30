@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div id="counter">0</div>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+  </body>
+  <script>
+    // Error
+    const counter = document.getElementById('counterrr');
+    const increase = document.getElementById('increase');
+    const decrease = document.getElementById('decrease');
+
+    let num = 0;
+    const render = () => {
+      counter.innerHTML = num;
+    };
+
+    increase.onclick = () => {
+      num++;
+      console.log('increase button is clicked', num);
+      render();
+    };
+
+    decrease.onclick = () => {
+      num--;
+      console.log('decrease button is clicked', num);
+      render();
+    };
+  </script>
+</html>
